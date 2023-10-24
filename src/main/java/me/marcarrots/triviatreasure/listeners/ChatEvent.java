@@ -1,5 +1,6 @@
 package me.marcarrots.triviatreasure.listeners;
 
+import com.gmail.nossr50.api.ChatAPI;
 import me.marcarrots.triviatreasure.TriviaTreasure;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -18,6 +19,11 @@ public class ChatEvent implements Listener {
     public void onPlayerChat(AsyncPlayerChatEvent event) {
 
         if (triviaTreasure.getGame() == null) {
+            return;
+        }
+
+        // ignore messages in mcmmo party chat
+        if (ChatAPI.isUsingPartyChat(event.getPlayer()) || ChatAPI.isUsingAdminChat(event.getPlayer())) {
             return;
         }
 

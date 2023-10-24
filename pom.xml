@@ -111,6 +111,13 @@
             <version>2.11.1</version>
             <scope>provided</scope>
         </dependency>
+        <dependency>
+            <groupId>com.gmail.nossr50</groupId>
+            <artifactId>mcMMO-API</artifactId>
+            <version>LATEST</version>
+            <scope>system</scope>
+            <systemPath>${pom.basedir}/lib/mcMMO.jar</systemPath>
+        </dependency>
     </dependencies>
 
 </project>

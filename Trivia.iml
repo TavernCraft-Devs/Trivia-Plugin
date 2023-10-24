@@ -35,5 +35,14 @@
     <orderEntry type="library" name="Maven: org.bstats:bstats-base:3.0.2" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: me.clip:placeholderapi:2.11.1" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.jetbrains:annotations:19.0.0" level="project" />
+    <orderEntry type="module-library">
+      <library name="Maven: com.gmail.nossr50:mcMMO-API:LATEST">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/mcMMO.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>
